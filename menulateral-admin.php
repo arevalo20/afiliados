@@ -40,7 +40,7 @@
 				</a>
 			</li>
 			<li class="treeview">
-				<a href="reporte-audios.php">
+				<a href="#">
 					<i class="fa fa-th-list"></i>
 					<span>Audios</span>
 					<span class="pull-right-container">
@@ -48,7 +48,7 @@
 					</span>
 				</a>
 			</li>
-			<li class="active treeview">
+			<!-- <li class="active treeview">
 				<a href="#">
 					<i class="fa fa-headphones"></i>
 					<span>Registro de audios</span>
@@ -56,7 +56,7 @@
 						<i class="fa fa-angle-left pull-right"></i>
 					</span>
 				</a>
-			</li>
+			</li> -->
 			<li class="active treeview">
 				<a href="#" data-toggle="modal" data-target="#senales">
 					<i class="fa fa-file-audio-o"></i>
