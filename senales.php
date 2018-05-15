@@ -1,45 +1,20 @@
-<!-- <div class="row">
-	<div class="col-md-4">
-		<div class="formulario">
-			<iframe src="http://wpc.774ef.xicdn.net/00774EF/web/acustikuno-videoplayer.html?autoplay=0" autoplay="false" width="100%" height="346" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-		</div>
-		<div class="contenido-titulo">
-			<h1>Video</h1>
-		</div>
-	</div>
-	<div class="col-md-2">
-		<div class="formulario">
-			<iframe src="http://consola.cdnonline.com.mx/p/118/sp/11800/embedIframeJs/uiconf_id/23449449/partner_id/118?iframeembed=true&playerId=kaltura_player_1515795325&entry_id=0_b94i1j8x&flashvars[streamerType]=auto" width="100%" height="200" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0"></iframe>
-		</div>
-		<div class="contenido-titulo">
-			<h1>Audio</h1>
-		</div>
-	</div>
-</div> -->
 
 <table class="table table-hover table-striped display" id="example" style="background-color: #fff; margin-bottom: 0px;">
 	<thead>
 		<tr>
-			<th style="text-align: center;">Señal en vivo</th>
-			<th colspan="2" style="text-align: center;">Audio</th>
+			<th style="text-align: center; width: 50%;">Señal en vivo</th>
+			<th style="text-align: center; width: 50%;">Audio</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td style="text-align: center;">
-
-
-
-				<iframe id="senalaf" src="https://acustik.cdnonline.com.mx/web/danielnoauto-player.html" width="560" height="395" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0">
+				<iframe id="senalaf" src="https://acustik.cdnonline.com.mx/web/danielnoauto-player.html" width="100%" height="395" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0">
 				</iframe>
 			</td>
 			<td style="text-align: center;">
-				<iframe src="http://consola.cdnonline.com.mx/p/118/sp/11800/embedIframeJs/uiconf_id/23449449/partner_id/118?iframeembed=true&playerId=kaltura_player_1526412752&entry_id=0_cykbvevg&flashvars[streamerType]=auto" width="100%" height="50" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0"></iframe>
-
+				<iframe src="http://consola.cdnonline.com.mx/p/118/sp/11800/embedIframeJs/uiconf_id/23449449/partner_id/118?iframeembed=true&playerId=kaltura_player_1526412752&entry_id=0_cykbvevg&flashvars[streamerType]=auto" width="80%" height="50" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0"></iframe>
 			</td>
-			<!-- <td style="text-align: center;">
-				<iframe src="http://consola.cdnonline.com.mx/p/118/sp/11800/embedIframeJs/uiconf_id/23449449/partner_id/118?iframeembed=true&playerId=kaltura_player_1515795325&entry_id=0_b94i1j8x&flashvars[streamerType]=auto" width="100%" height="200" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0"></iframe>
-			</td> -->
 		</tr>
 	</tbody>
 </table>
