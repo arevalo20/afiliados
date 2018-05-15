@@ -1,9 +1,9 @@
 <?php
 session_start();
 if (@!$_SESSION['nombre_usuario']) {
-	header("Location:index.php");
-}elseif ($_SESSION['privilegio']==2) {
-	header("Location:senalafiliadas.php");
+    header("Location:index.php");
+} elseif ($_SESSION['privilegio'] == 2) {
+    header("Location:senalafiliadas.php");
 }
 ?>
 
@@ -13,16 +13,16 @@ require 'cn.php';
 ?>
 
 
-<?php include("header.php");?>
+<?php include "header.php";?>
 
 <body class="skin-red fixed">
 	<div class="wrapper">
 
 		<!-- Navigation -->
-		<?php include("navegacion.php");?>
+		<?php include "navegacion.php";?>
 
 		<!-- Left side column. contains the logo and sidebar -->
-		<?php include("menulateral-admin.php");?>
+		<?php include "menulateral-admin.php";?>
 
 		<!-- Page Content -->
 		<div class="content-wrapper">
@@ -33,20 +33,19 @@ require 'cn.php';
 							<h1>Registrar usuario</h1>
 						</div>
 						<form action="regis-user.php" method="post" onsubmit="return validaruser()">
-							<input type="text" name="nombre" id="nombre" placeholder="Nombre completo" class="input" size="32" value="">
-							<input type="text" name="nombre_usuario" id="nombre_usuario" placeholder="Nombre de usuario" class="input" size="32" value="">
-							<input type="email" name="email" id="email" placeholder="E-mail" class="input" value="" size="32">
+							<input type="text" name="nombre" id="nombre" placeholder="Nombre completo" class="input" size="50" value="">
+							<input type="text" name="nombre_usuario" id="nombre_usuario" placeholder="Nombre de usuario" class="input" size="50" value="">
+							<input type="email" name="email" id="email" placeholder="E-mail" class="input" value="" size="50">
 							<input type="password" name="password" id="password" placeholder="Contraseña" class="input" value="" size="20">
 							<select class="input styled-select slate" id="privilegio" name="privilegio">
 								<option value="">Selecciona una opción</option>
 								<?php
-								$registros = "SELECT * FROM privilegio";
-								$registro = $conexion ->query($registros);
-								while($row = $registro -> fetch_array(MYSQLI_ASSOC))
-								{
-									echo "<option value=".$row['idprivilegio'].">".$row['priv_user']."</option>";
-								}
-								?>
+$registros = "SELECT * FROM privilegio";
+$registro  = $conexion->query($registros);
+while ($row = $registro->fetch_array(MYSQLI_ASSOC)) {
+    echo "<option value=" . $row['idprivilegio'] . ">" . $row['priv_user'] . "</option>";
+}
+?>
 							</select>
 							<input type="submit" class="button" value="Registrar">
 						</form>
@@ -57,9 +56,9 @@ require 'cn.php';
 						</div>
 						<div class="table-responsive">
 							<?php
-							$consulta = "SELECT usuarios.id_usuario, usuarios.nombre_usuario, usuarios.nombre, privilegio.priv_user FROM usuarios INNER JOIN privilegio ON usuarios.privilegio = privilegio.idprivilegio";
-							$resultadousuarios = $conexion ->query($consulta);
-							?>
+$consulta          = "SELECT usuarios.id_usuario, usuarios.nombre_usuario, usuarios.nombre, privilegio.priv_user FROM usuarios INNER JOIN privilegio ON usuarios.privilegio = privilegio.idprivilegio";
+$resultadousuarios = $conexion->query($consulta);
+?>
 							<table class="table table-hover table-striped display" id="example" style="background-color: #fff; margin-bottom: 0px;">
 								<thead>
 									<tr>
@@ -70,26 +69,26 @@ require 'cn.php';
 									</tr>
 								</thead>
 								<tbody>
-									<?php while($row = $resultadousuarios -> fetch_array(MYSQLI_ASSOC)){ ?>
+									<?php while ($row = $resultadousuarios->fetch_array(MYSQLI_ASSOC)) {?>
 									<tr>
 										<td>
-											<?php echo $row['nombre'];?>
+											<?php echo $row['nombre']; ?>
 										</td>
 										<td>
-											<?php echo $row['priv_user'];?>
+											<?php echo $row['priv_user']; ?>
 										</td>
 										<td>
-											<?php echo $row['nombre_usuario'];?>
+											<?php echo $row['nombre_usuario']; ?>
 										</td>
 										<td class="acciones">
-											<a href="modificar-usuario.php?id=<?php echo $row['id_usuario'];?>"><i class="fa fa-pencil "></i></a>
-											<!-- <a href="#" data-href="modificar-usuario.php?id=<?php echo $row['id_usuario'];?>" data-toggle="modal" data-target="#modificaruser"><i class="fa fa-pencil "></i></a> -->
+											<a href="modificar-usuario.php?id=<?php echo $row['id_usuario']; ?>"><i class="fa fa-pencil "></i></a>
+											<!-- <a href="#" data-href="modificar-usuario.php?id=<?php echo $row['id_usuario']; ?>" data-toggle="modal" data-target="#modificaruser"><i class="fa fa-pencil "></i></a> -->
 										</td>
 										<td class="acciones">
 											<a href="#" data-href="eliminar.php?id=<?php echo $row['id_usuario']; ?>" data-toggle="modal" data-target="#confirm-delete"><i class="fa fa-times "></i></a>
 										</td>
 									</tr>
-									<?php } ?>
+									<?php }?>
 								</tbody>
 							</table>
 						</div>
@@ -100,11 +99,11 @@ require 'cn.php';
 		<!-- /.container -->
 
 		<!-- Footer -->
-		<?php include("footer.php");?>
+		<?php include "footer.php";?>
 	</div>
 
 
-	<?php include("modal.php"); ?>
+	<?php include "modal.php";?>
 
 
 	<!-- Modal eliminar -->

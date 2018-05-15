@@ -2,8 +2,6 @@ function validarusario() {
 	var nombre_usuario, password;
 	nombre_usuario = document.getElementById("nombre_usuario").value;
 	password = document.getElementById("password").value;
-
-
 	if (nombre_usuario === "" || password === "") {
 		//swal('Lo sentimos', 'Todos los campos son obligatorios.', 'warning');
 		swal({
@@ -23,7 +21,7 @@ function validarusario() {
 			}
 		})
 		return false;
-	} else if (nombre_usuario.length > 10) {
+	} else if (nombre_usuario.length > 20) {
 		//swal('Oops...', 'El nombre de usuario es muy largo.', 'warning');
 		swal({
 			title: 'Oops...',
@@ -35,7 +33,7 @@ function validarusario() {
 			showCloseButton: true,
 		})
 		return false;
-	} else if (password.length > 10) {
+	} else if (password.length > 20) {
 		//swal('Lo lamento', 'La contraseña es invalida.', 'error');
 		swal({
 			title: 'Lo lamento',
