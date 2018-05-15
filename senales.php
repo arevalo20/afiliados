@@ -27,7 +27,10 @@
 	<tbody>
 		<tr>
 			<td style="text-align: center;">
-				<iframe id="senalaf" src="http://consola.cdnonline.com.mx/p/118/sp/11800/embedIframeJs/uiconf_id/23449264/partner_id/118?iframeembed=true&playerId=kaltura_player_1518562756&entry_id=0_oftzhvs2&flashvars[streamerType]=auto" width="560" height="395" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0">
+
+
+
+				<iframe id="senalaf" src="https://acustik.cdnonline.com.mx/web/daniel-player.html" width="560" height="395" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0">
 				</iframe>
 			</td>
 			<td style="text-align: center;">

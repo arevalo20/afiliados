@@ -18,7 +18,7 @@
 							<div class="login-content">
 								<div class="login-header">
 									<!--<button type="button" class="close" data-dismiss="modal">&times;</button>-->
-									<h4 class="login-title">Inicio de secion</h4>
+									<h4 class="login-title">Inicio de sesión</h4>
 								</div>
 								<div class="login-body">
 									<form name="loginform" id="loginform" action="validar-inicio-usuarios.php" method="POST" onsubmit="return validarusario()" autocomplete="off">
