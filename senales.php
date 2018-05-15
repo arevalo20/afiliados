@@ -30,11 +30,11 @@
 
 
 
-				<iframe id="senalaf" src="https://acustik.cdnonline.com.mx/web/daniel-player.html" width="560" height="395" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0">
+				<iframe id="senalaf" src="https://acustik.cdnonline.com.mx/web/danielnoauto-player.html" width="960" height="540" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0">
 				</iframe>
 			</td>
 			<td style="text-align: center;">
-				<iframe src="http://consola.cdnonline.com.mx/p/118/sp/11800/embedIframeJs/uiconf_id/23449449/partner_id/118?iframeembed=true&playerId=kaltura_player_1515795325&entry_id=0_b94i1j8x&flashvars[streamerType]=auto" width="100%" height="50" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0"></iframe>
+				<iframe src="http://consola.cdnonline.com.mx/p/118/sp/11800/embedIframeJs/uiconf_id/23449449/partner_id/118?iframeembed=true&playerId=kaltura_player_1526412752&entry_id=0_cykbvevg&flashvars[streamerType]=auto" width="560" height="395" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0"></iframe>
 
 			</td>
 			<!-- <td style="text-align: center;">

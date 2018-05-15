@@ -45,7 +45,7 @@
 	<script src="js/app.min.js"></script>
 	<script> $(document).ready(function(){
   $("#senales").on("hidden.bs.modal",function(){
-    $("#senalaf").attr("src","https://acustik.cdnonline.com.mx/web/daniel-player.html ");
+    $("#senalaf").attr("src","https://acustik.cdnonline.com.mx/web/danielnoauto-player.html");
   })
 })
 </script>
