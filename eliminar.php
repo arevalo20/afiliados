@@ -36,13 +36,13 @@ $resultado= $conexion -> query($registros);
 						<?php
 						if (!$resultado) {
 							echo '<script>
-							alert("Error al modificar usuario");
+							alert("Error al eliminado usuario");
 							window.history.go(-1);
 							</script>';
 						} else{
 							echo '<script>
-							alert("Usuario modificado exitosamente");
-							window.history.go(-3);
+							alert("Usuario eliminado exitosamente");
+							window.history.go(-2);
 							</script>';
 						}
 						?>
