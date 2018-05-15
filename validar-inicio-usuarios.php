@@ -1,4 +1,4 @@
-<?php 
+<?php
 include 'cn.php';
 
 session_start();
@@ -16,7 +16,7 @@ if($f2=mysqli_fetch_assoc($sql2)){
 		$_SESSION['nombre_usuario']=$f2['nombre_usuario'];
 		$_SESSION['privilegio']=$f2['privilegio'];
 
-		echo '<script>alert("BIENVENIDO ADMINISTRADOR '. $_SESSION['nombre_usuario'] .' ");</script> ';
+		echo '<script>alert("Bienvenido administrador '. $_SESSION['nombre_usuario'] .' ");</script> ';
 		echo "<script>location.href='registro-usuario.php';</script>";
 	}
 	else{
@@ -34,7 +34,7 @@ if($f=mysqli_fetch_assoc($sql)){
 		$_SESSION['nombre_usuario']=$f['nombre_usuario'];
 		$_SESSION['privilegio']=$f['privilegio'];
 
-		echo '<script>alert("BIENVENIDO USUARIO '. $_SESSION['nombre_usuario'] .' ");</script> ';
+		echo '<script>alert("Bienvenido '. $_SESSION['nombre_usuario'] .' ");</script> ';
 		echo "<script>location.href='registro-usuario.php';</script>";
 	}
 	else{
@@ -44,5 +44,5 @@ if($f=mysqli_fetch_assoc($sql)){
 }
 else{
 	echo '<script>alert("ESTE USUARIO NO EXISTE, PORFAVOR REGISTRESE PARA PODER INGRESAR");</script> ';
-	echo "<script>location.href='index.php';</script>";	
+	echo "<script>location.href='index.php';</script>";
 }

@@ -4,8 +4,6 @@ function validaruser() {
 	email = document.getElementById("email").value;
 	nombre_usuario = document.getElementById("nombre_usuario").value;
 	password = document.getElementById("password").value;
-
-
 	if (nombre === "" || email === "" || nombre_usuario === "" || password === "") {
 		//swal('Lo sentimos', 'Todos los campos son obligatorios.', 'warning');
 		swal({
@@ -48,7 +46,7 @@ function validaruser() {
 			showCloseButton: true,
 		})
 		return false;
-	} else if (email.length > 30) {
+	} else if (email.length > 40) {
 		//swal('Oops...', 'El correo es invalido.', 'warning');
 		swal({
 			title: 'Oops...',

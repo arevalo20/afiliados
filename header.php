@@ -43,4 +43,10 @@
 	<script src="plugins/slimScroll/jquery.slimscroll.min.js"></script>
 	<!-- AdminLTE App -->
 	<script src="js/app.min.js"></script>
+	<script> $(document).ready(function(){
+  $("#senales").on("hidden.bs.modal",function(){
+    $("#senalaf").attr("src","http://consola.cdnonline.com.mx/p/118/sp/11800/embedIframeJs/uiconf_id/23449264/partner_id/118?iframeembed=true&playerId=kaltura_player_1518562756&entry_id=0_oftzhvs2&flashvars[streamerType]=auto");
+  })
+})
+</script>
 </head>

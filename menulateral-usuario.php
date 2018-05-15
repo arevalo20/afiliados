@@ -4,7 +4,7 @@
 		<!-- Sidebar user panel -->
 		<div class="user-panel">
 			<div class="pull-left image">
-				<img src="img/avatar04.png" class="img-circle" alt="User Image">
+				<img src="img/favicon-300x300.png" class="img-circle" alt="User Image">
 			</div>
 			<div class="pull-left info">
 				<!--<p>Nombre de usuario</p>-->
@@ -37,7 +37,7 @@
 					</span>
 				</a>
 			</li>
-			<li class="treeview">
+			<!-- <li class="treeview">
 				<a href="notas-usuario.php">
 					<i class="fa fa-wrench"></i>
 					<span>Notas</span>
@@ -45,7 +45,7 @@
 						<i class="fa fa-angle-left pull-right"></i>
 					</span>
 				</a>
-			</li>
+			</li> -->
 			<!-- <li class="treeview">
 				<a href="#">
 					<i class="fa fa-wrench"></i>
@@ -55,7 +55,7 @@
 					</span>
 				</a>
 			</li> -->
-			<li class="treeview">
+			<!-- <li class="treeview">
 				<a href="#">
 					<i class="fa fa-tachometer"></i>
 					<span>Dashboard</span>
@@ -63,7 +63,7 @@
 						<i class="fa fa-angle-left pull-right"></i>
 					</span>
 				</a>
-			</li>
+			</li> -->
 		</ul>
 	</section>
 	<!-- /.sidebar -->
